@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  closed = true;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  menu(){
+    this.closed = ! this.closed;
+  }
+
+  isClosed(){
+    return this.closed;
+  }
 }

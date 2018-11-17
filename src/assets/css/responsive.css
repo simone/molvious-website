@@ -147,7 +147,6 @@
 
 /* Media 420Px Start */
 @media (max-width: 767px) {
-  .sportsmagazine-right-section, .logo-stella { display: none; }
 	.navbar { position: relative; float: right;}
 	.navbar-toggle { display: block;  background-color: #eee; margin: 30px 30px 25px 0px; }
 	.navbar-collapse { padding: 0px 0px 0px 0px; width: 260px; background-color: #272727; box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.10); border: none; position: absolute; right: 0%; top: 100%; z-index: 9999; margin: 10px 0px 0px 0px; }
@@ -798,4 +797,11 @@
 
 @media screen and (min-width: 1254px) {
   .sportsmagazine-banner-wrap { padding-top: 100px;}
+}
+
+@media screen and (min-width: 768px) {
+  .sportsmagazine-mobile { display: none; }
+}
+@media screen and (max-width: 768px) {
+  .closed { display: none; }
 }

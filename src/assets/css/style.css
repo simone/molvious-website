@@ -255,7 +255,7 @@ address { font-style: italic; }
 	position: relative;
 }
 .sportsmagazine-main-content 	{ padding: 50px 0px 10px 0px; }
-.sportsmagazine-right-section 	{ float: right; }
+.sportsmagazine-right-section 	{ float: right; padding-top:20px; }
 .sportsmagazine-left-section 	{ float: left; }
 .sportsmagazine-main-wrapper {
   overflow-x: hidden;
@@ -8423,4 +8423,13 @@ blockquote span:before {
         -ms-transition: all 0.4s ease-in-out;
          -o-transition: all 0.4s ease-in-out;
             transition: all 0.4s ease-in-out;
+}
+
+
+.sportsmagazine-mobile {
+    font-size: 3em;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 70px;
 }
