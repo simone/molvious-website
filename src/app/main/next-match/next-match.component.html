@@ -10,7 +10,7 @@
       <ul>
         <li>
           <img [src]="match.team1.image" alt="">
-            <h6><a href="#">{{ match.team1.name }}</a></h6>
+            <h6><a>{{ match.team1.name }}</a></h6>
         </li>
         <li>
             <div class="widget_next_match_option">
@@ -20,7 +20,7 @@
         </li>
         <li>
           <img [src]="match.team2.image" alt="">
-            <h6><a href="#">{{ match.team2.name }}</a></h6>
+            <h6><a>{{ match.team2.name }}</a></h6>
         </li>
       </ul>
     </div>
@@ -28,6 +28,6 @@
         <h6>Game Countdown</h6>
         <div id="sportsmagazine-countdown"> {{ next.date | amDifference: today :'days' : true | number:'1.0-0' }} giorni</div>
     </div>
-    <a href="#" class="widget_match_btn">Entrata libera</a>
+    <a class="widget_match_btn">Entrata libera</a>
 </div>
 <!--// Widget Next Match \\-->
