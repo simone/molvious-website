@@ -1,0 +1,10 @@
+.stick-played time {
+  background-color: #454545b3;
+}
+
+.stick-played ul.sportsmagazine-bgcolor {
+  background-color: #ffad11;
+}
+.stick-played ul:before {
+    border-top-color: #ffad11;
+}

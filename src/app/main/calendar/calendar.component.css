@@ -1,0 +1,45 @@
+.sportsmagazine-calendar {
+  margin-bottom: 2em;
+}
+img {
+  width: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+tr:nth-child(even) {
+  background-color: #272729;
+}
+td {
+  border: 0;
+  width: 30%;
+  color: white;
+}
+a {
+  color: white;
+}
+
+.home {
+  text-align: left;
+  width: 35%;
+}
+.guest {
+  text-align: right;
+  width: 35%;
+}
+@media (max-width: 600px) {
+  span.campo {
+    display: none;
+}
+}
+@media (max-width: 500px) {
+  td.vs {
+      display: none;
+  }
+}
+@media (max-width: 330px) {
+  img {
+    width: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+  }
+}

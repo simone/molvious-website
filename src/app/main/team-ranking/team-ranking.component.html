@@ -1,0 +1,29 @@
+<!--// Widget TeamRanking \\-->
+<a name="ranking"></a>
+<div class="widget widget_team_ranking">
+    <div class="sportsmagazine-fancy-title"><h2>Classifica</h2></div>
+    <div class="ranking-title-table">
+        <ul class="ranking-title-row">
+            <li></li>
+            <li>Squadre</li>
+            <li>PT</li>
+            <li>VG</li>
+            <li>DC</li>
+        </ul>
+    </div>
+    <div class="ranking-content-table" *ngFor="let rank of rankings; let i=index">
+        <ul class="ranking-content-row">
+            <li>{{ i+1 }}</li>
+            <li>
+              <img [src]="rank.team.image" alt="">
+              <div class="ranking-logo">
+                <span>{{ rank.team.name }}</span>
+              </div>
+            </li>
+            <li>{{ rank.points }}</li>
+            <li>{{ rank.wins }}/{{ rank.played }}</li>
+            <li>{{ rank.score - rank.against }}</li>
+        </ul>
+    </div>
+</div>
+<!--// Widget TeamRanking \\-->

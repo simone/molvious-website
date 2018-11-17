@@ -1,0 +1,59 @@
+<!--// Advertisement \\-->
+<a name="rules"></a>
+<figure class="sportsmagazine-add-banner">
+  <img src="assets/extra-images/add-thumb-1.jpg" alt="">
+  <span class="sportsmagazine-add-transparent"></span>
+  <figcaption>
+      <div class="sportsmagazine-addbanner-caption">
+          <h2>REGOLAMENTO GENERALE</h2>
+          <p>
+            Torneo over 35. Ogni squadra potrà iscrivere un massimo di n°18 giocatori. Sono ammessi n°3 atleti fuori quota...[continua]
+          </p>
+          <a href="#rules-extended" (click)="open()" class="sportsmagazine-banner-btn">Leggi il regolamento<span></span></a>
+      </div>
+  </figcaption>
+</figure>
+
+<a name="rules-extended"></a>
+<div class="sportsmagazine-blog-grid sportsmagazine-add-banner" *ngIf="rules">
+  <h2>REGOLAMENTO GENERALE</h2>
+  <ul>
+    <li>Torneo over 35</li>
+    <li>Ogni squadra potrà iscrivere un massimo di n°18 giocatori</li>
+    <li>Sono ammessi n°3 atleti fuori quota</li>
+    <li>I giocatori presenti nelle liste d’iscrizione non devono essere tesserati in nessuna squadra partecipante a competizioni ufficiali FIP</li>
+    <li>No sono ammesse modifiche alla rosa durante il torneo.</li>
+    <li>Massimo n°12 giocatori convocabili per partita.</li>
+    <li>Ogni giocatore dovrà presentare all’atto dell’iscrizione fotocopia del documento d’identità e certificato d’idoneità alla pratica sportiva agonistica e modulo firmato di scarico responsabilità</li>
+    <li>Ogni partecipante risponde dal punto di vista assicurativo per sé stesso</li>
+    <li>È obbligatorio fornire il nominativo di almeno un referente per ogni squadra</li>
+    <li>Ogni incontro si disputerà come da calendario durante il medesimo week-end</li>
+    <li>L’organizzazione si riserva il diritto insindacabile di modificare il calendario per ragioni organizzative</li>
+    <li>Ogni incontro sarà diretto da un arbitro federale con la presenza di ufficiali di tavolo</li>
+    <li>Ogni incontro può iniziare con al massimo 15' di ritardo, pena la perdita dell'incontro per 20-0 per la squadra ritardataria</li>
+    <li>Ogni squadra deve presentarsi agli incontri con un MINIMO di 7 atleti</li>
+    <li>Ad inizio partita ogni squadra dovrà schierare almeno 5 giocatori in campo, pena la perdita dell'incontro per 20-0</li>
+    <li>Tutte le partite (andata – ritorno – e fasi finali) sono aperte al pubblico</li>
+    <li>Per delineare l’ordine di classifica delle squadre a pari punteggio si terrà conto in ordine:
+    1. Differenza Canestri 2. Canestri segnati 3. Minor Numero falli disciplinari (Tecnici e/o Espulsioni).</li>
+  </ul>
+  <h2>REGOLE DI GIOCO</h2>
+  <ul>
+    <li>Per tutte le regole di gioco vale il regolamento FIP</li>
+    <li>Ogni incontro è di quattro periodi di tempo, oltre eventuali supplementari in caso di parità.</li>
+    <li>Ogni tempo è di 12 minuti “effettivi” con disattivazione cronometro solo durante i tiri liberi.</li>
+    <li>Tra primo–secondo e terzo–quarto quarto si farà una pausa di 2 minuti.</li>
+    <li>Tra secondo e terzo quarto pausa di 10 minuti</li>
+    <li>In caso di parità al termine del 4° quarto si disputa un ulteriore tempo supplementare di 5 minuti, ripetibile in caso di ulteriore parità.</li>
+    <li>Ciascun giocatore deve accettare incondizionatamente le decisioni dell’arbitro/i.</li>
+    <li>Il bonus di squadra viene raggiunto dopo 4 falli ad ogni quarto di gioco. Dal quinto si tirano i tiri liberi.</li>
+    <li>Si deve obbligatoriamente rispettare il limite di tre secondi nell'area piccola.</li>
+    <li>2 Time out a squadra I° Tempo - 3 Time out a squadra II° Tempo + 1 in caso di tempo supplementare</li>
+    <li>Referto e punteggio, conteggio falli di squadra e personali (max 5)</li>
+    <li>In caso di espulsione il giocatore salta n°02 partite.</li>
+    <li>Ogni 3 falli tecnici comminati a singolo giocatore, anche in partite diverse, ci sarà un turno di sospensione.</li>
+  </ul>
+  <a href="#rules" (click)="close()" class="sportsmagazine-banner-btn">Chiudi<span></span></a>
+</div>
+
+<!--// Advertisement \\-->

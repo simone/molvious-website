@@ -1,0 +1,24 @@
+<div class="sportsmagazine-fixture-slider slick-initialized slick-slider" style="z-index: 2">
+  <span class="slick-arrow-left slick-arrow" (click)="prev()">
+    <i class="fa fa-angle-left"></i>
+  </span>
+
+  <div aria-live="polite" class="slick-list draggable">
+    <div class="slick-track" role="listbox">
+
+      <div class="sportsmagazine-fixture-slider-layer slick-slide" [class.stick-played]="fixture.played()"
+        tabindex="-1" role="option" aria-hidden="true" *ngFor="let fixture of fixtures; let i=index">
+
+        <time>{{ fixture.date | amLocale:'it' | amDateFormat:'LL' }}</time>
+        <ul class="sportsmagazine-bgcolor">
+          <li>{{ fixture.match.team1.name }} <span *ngIf="fixture.played()">{{ fixture.match.score1 }}</span></li>
+          <li>{{ fixture.match.team2.name }} <span *ngIf="fixture.played()">{{ fixture.match.score2 }}</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <span class="slick-arrow-right slick-arrow" (click)="next()">
+    <i class="fa fa-angle-right"></i>
+  </span>
+</div>

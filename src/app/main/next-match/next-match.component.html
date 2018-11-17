@@ -1,0 +1,33 @@
+<!--// Widget Next Match \\-->
+<a name="next"></a>
+<div class="widget widget_next_match" *ngIf="next">
+    <div class="sportsmagazine-fancy-title"><h2>Prossime Partite</h2></div>
+    <div class="widget_next_match_title">
+        <h5>{{ next.name }}</h5>
+        <span>{{ next.date | amLocale:'it' | amDateFormat:'LL' }}</span>
+    </div>
+    <div *ngFor="let match of matches; let i=index">
+      <ul>
+        <li>
+          <img [src]="match.team1.image" alt="">
+            <h6><a href="#">{{ match.team1.name }}</a></h6>
+        </li>
+        <li>
+            <div class="widget_next_match_option">
+                <h6 *ngIf="match.time">{{ match.time.hours | number:'2.0' }} : {{ match.time.minutes | number:'2.0' }}</h6>
+                <small>Campo {{ match.field }}</small>
+            </div>
+        </li>
+        <li>
+          <img [src]="match.team2.image" alt="">
+            <h6><a href="#">{{ match.team2.name }}</a></h6>
+        </li>
+      </ul>
+    </div>
+    <div class="widget_match_countdown">
+        <h6>Game Countdown</h6>
+        <div id="sportsmagazine-countdown"> {{ next.date | amDifference: today :'days' : true | number:'1.0-0' }} giorni</div>
+    </div>
+    <a href="#" class="widget_match_btn">Entrata libera</a>
+</div>
+<!--// Widget Next Match \\-->
