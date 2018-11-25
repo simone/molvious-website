@@ -11,8 +11,8 @@
 
         <time>{{ fixture.date | amLocale:'it' | amDateFormat:'LL' }}</time>
         <ul class="sportsmagazine-bgcolor">
-          <li>{{ fixture.match.team1.name }} <span *ngIf="fixture.played()">{{ fixture.match.score1 }}</span></li>
-          <li>{{ fixture.match.team2.name }} <span *ngIf="fixture.played()">{{ fixture.match.score2 }}</span></li>
+          <li [class.winner]="fixture.winByHome()">{{ fixture.match.team1.name }} <span *ngIf="fixture.played()">{{ fixture.match.score1 }}</span></li>
+          <li [class.winner]="fixture.winByGuest()">{{ fixture.match.team2.name }} <span *ngIf="fixture.played()">{{ fixture.match.score2 }}</span></li>
         </ul>
       </div>
     </div>

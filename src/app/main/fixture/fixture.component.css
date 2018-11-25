@@ -8,3 +8,6 @@
 .stick-played ul:before {
     border-top-color: #ffad11;
 }
+.stick-played .winner {
+  background-color: chartreuse;
+}

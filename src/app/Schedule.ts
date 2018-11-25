@@ -12,10 +12,10 @@ export class Schedule {
 
 export const SCHEDULE = [
   new Schedule('Molvious 1° giornata', new Date('11/25/2018'), [
-    new Match(REAL, ESQUILINO, Field.A, {hours:14, minutes: 0}),
-    new Match(BEVERLY, OLD, Field.A, {hours:16, minutes: 0}),
-    new Match(PANZAI, CHELTRONES, Field.B, {hours:16, minutes: 0}),
-    new Match(MERELLERS, TEAM9, Field.B, {hours:14, minutes: 0}),
+    new Match(REAL, ESQUILINO, Field.A, {hours:14, minutes: 0}, 38, 43),
+    new Match(BEVERLY, OLD, Field.A, {hours:16, minutes: 0}, 58, 65),
+    new Match(PANZAI, CHELTRONES, Field.B, {hours:16, minutes: 0}, 68, 31),
+    new Match(MERELLERS, TEAM9, Field.B, {hours:14, minutes: 0}, 57, 53),
     new Match(MAE)
   ]),
   new Schedule('Molvious 2° giornata', new Date('12/16/2018'), [

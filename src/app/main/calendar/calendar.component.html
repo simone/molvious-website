@@ -13,7 +13,14 @@
             <tr *ngFor="let match of schedule.matches; let i=index">
               <td class="home"><img [src]="match.team1.image" alt=""> <a>{{ match.team1.name }}</a></td>
 
-              <td class="vs" *ngIf="match.team2"><span *ngIf="match.time">{{ match.time.hours | number:'2.0' }} : {{ match.time.minutes | number:'2.0' }}</span> <span class="campo"> Campo</span> {{ match.field }}</td>
+              <td class="vs" *ngIf="match.played()">
+                  {{ match.score1 }} : {{ match.score2 }}
+                </td>
+
+              <td class="vs" *ngIf="match.team2 && !match.played()">
+                <span *ngIf="match.time">{{ match.time.hours | number:'2.0' }} : {{ match.time.minutes | number:'2.0' }}</span>
+                <span class="campo"> Campo</span> {{ match.field }}
+              </td>
               <td class="guest" *ngIf="match.team2"><a>{{ match.team2.name }}</a> <img [src]="match.team2.image" alt="" *ngIf="match.team2"> </td>
 
               <td class="vs" *ngIf="!match.team2"></td>

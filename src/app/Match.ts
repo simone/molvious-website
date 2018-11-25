@@ -14,4 +14,12 @@ export class Match {
     played(){
       return this.score1 > 0 || this.score2 > 0
     }
+
+    winByHome(){
+      return this.score1 > this.score2
+    }
+    winByGuest(){
+      return this.score1 < this.score2
+    }
+
 }

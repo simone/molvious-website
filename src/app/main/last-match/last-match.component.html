@@ -2,18 +2,26 @@
 <div class="sportsmagazine-match-result" *ngIf="last">
     <div class="sportsmagazine-match-title">
         <h4>Ultime partite</h4>
-        <h5>{{ last.name }}</h5>
+        <h4>{{ last.name }}</h4>
         <span>{{ last.date | amLocale:'it' | amDateFormat:'LL' }}</span>
     </div>
     <div *ngFor="let match of last.matches; let i=index">
-      <ul>
+      <ul *ngIf="match.team2">
           <li>
               <img [src]="match.team1.image" alt="">
               <h4><a>{{ match.team1.name }}</a></h4>
           </li>
           <li class="sportsmagazine-match-score">
               <h5>RISULTATO</h5>
-              <p><strong class="sportsmagazine-color">{{ match.score1 }}</strong> <small>:</small> {{ match.score2 }}</p>
+              <p>
+                <strong [class.sportsmagazine-color]="match.score1 > match.score2">
+                  {{ match.score1 }}
+                </strong>
+                <small>:</small>
+                <strong [class.sportsmagazine-color]="match.score1 < match.score2">
+                    {{ match.score2 }}
+                  </strong>
+              </p>
           </li>
           <li>
             <img [src]="match.team2.image" alt="">

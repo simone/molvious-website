@@ -11,6 +11,14 @@ class Fixture {
     played(){
       return this.match.score1 > 0 || this.match.score2 > 0
     }
+
+    winByHome(){
+      return this.match.score1 > this.match.score2
+    }
+    winByGuest(){
+      return this.match.score1 < this.match.score2
+    }
+
 }
 
 @Component({

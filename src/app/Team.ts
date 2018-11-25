@@ -10,7 +10,7 @@ export const CHELTRONES = new Team("Cheltrones", "assets/molvious/logos/cheltron
 export const REAL = new Team("Real Tor Pigna", "assets/molvious/logos/real.png")
 export const ESQUILINO = new Team("Esquilino", "assets/molvious/logos/esquilino.jpg")
 export const OLD = new Team("Old School", "assets/molvious/logos/oldschool.png")
-export const TEAM9 = new Team("Team 9", "assets/molvious/logos/team9.png")
+export const TEAM9 = new Team("Angels", "assets/molvious/logos/angels.png")
 
 export const TEAMS = [
   MERELLERS, PANZAI, MAE,
