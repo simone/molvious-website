@@ -26,10 +26,10 @@ export const SCHEDULE = [
     new Match(BEVERLY),
   ]),
   new Schedule('Molvious 3° giornata', new Date('01/13/2019'), [
-    new Match(BEVERLY, MERELLERS, Field.A, {hours:14, minutes: 0}),
-    new Match(OLD, MAE, Field.A, {hours:16, minutes: 0}),
-    new Match(REAL, CHELTRONES, Field.B, {hours:16, minutes: 0}),
-    new Match(ESQUILINO, TEAM9, Field.B, {hours:14, minutes: 0}),
+    new Match(BEVERLY, MERELLERS, Field.A, {hours:14, minutes: 0}, 43, 31),
+    new Match(OLD, MAE, Field.A, {hours:16, minutes: 0}, 51, 37),
+    new Match(REAL, CHELTRONES, Field.B, {hours:16, minutes: 0}, 55, 57),
+    new Match(ESQUILINO, TEAM9, Field.B, {hours:14, minutes: 0}, 59, 41),
     new Match(PANZAI),
   ]),
   new Schedule('Molvious 4° giornata', new Date('01/27/2019'), [
