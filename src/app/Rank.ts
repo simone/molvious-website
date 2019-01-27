@@ -48,7 +48,7 @@ export const RANKINGS = TEAMS.map(
       })
     })
 
-    return new Rank(team, wins * 3, played, wins, score, against, loosers)
+    return new Rank(team, wins * 2, played, wins, score, against, loosers)
 
   }).sort((r1, r2) => {
     // punteggio
