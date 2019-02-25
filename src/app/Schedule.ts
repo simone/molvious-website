@@ -47,25 +47,25 @@ export const SCHEDULE = [
     new Match(MERELLERS),
   ]),
   new Schedule('Molvious 6° giornata', new Date('02/24/2019'), [
-    new Match(MAE, PANZAI, Field.A),
-    new Match(CHELTRONES, BEVERLY, Field.A),
-    new Match(REAL, MERELLERS),
-    new Match(OLD, ESQUILINO),
+    new Match(MAE, PANZAI, Field.A, {hours:16, minutes: 0}, 62, 56),
+    new Match(CHELTRONES, BEVERLY, Field.A, {hours:14, minutes: 0}, 36, 58),
+    new Match(REAL, MERELLERS, Field.B, {hours:14, minutes: 0}, 56, 50),
+    new Match(OLD, ESQUILINO, Field.B, {hours:16, minutes: 0}, 71, 49),
     new Match(TEAM9),
   ]),
   new Schedule('Molvious 7° giornata', new Date('03/10/2019'), [
-    new Match(OLD, MERELLERS, Field.A),
-    new Match(BEVERLY, PANZAI, Field.A),
-    new Match(REAL, MAE),
-    new Match(CHELTRONES, TEAM9),
-    new Match(ESQUILINO)
-  ]),
-  new Schedule('Molvious 8° giornata', new Date('03/24/2019'), [
     new Match(REAL, BEVERLY, Field.A),
     new Match(PANZAI, ESQUILINO, Field.A),
     new Match(MERELLERS, CHELTRONES),
     new Match(TEAM9, MAE),
     new Match(OLD),
+  ]),
+  new Schedule('Molvious 8° giornata', new Date('03/24/2019'), [
+    new Match(OLD, MERELLERS, Field.A),
+    new Match(BEVERLY, PANZAI, Field.A),
+    new Match(REAL, MAE),
+    new Match(CHELTRONES, TEAM9),
+    new Match(ESQUILINO)
   ]),
   new Schedule('Molvious 9° giornata', new Date('04/07/2019'), [
     new Match(MAE, MERELLERS, Field.A),
