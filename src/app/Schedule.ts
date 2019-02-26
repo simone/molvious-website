@@ -1,14 +1,24 @@
 import { Match } from "./Match";
-import { PANZAI, MERELLERS, BEVERLY, CHELTRONES, ESQUILINO, REAL, MAE, OLD, TEAM9 } from "./Team";
+import { PANZAI, MERELLERS, BEVERLY, CHELTRONES, ESQUILINO, REAL, MAE, OLD, TEAM9, Team } from './Team';
+import { PRIMA, SECONDA, TERZA, QUARTA,
+  QUINTA, SESTA, SETTIMA, OTTAVA,
+  SEMIFINALISTA1, SEMIFINALISTA2,
+  SEMIFINALISTA3, SEMIFINALISTA4,
+  FINALISTA1, FINALISTA2,
+  TERZISTA3, TERZISTA4 } from './Finals'
+
 import { Field } from './Field.enum';
-import { Time } from "@angular/common";
+import { findLast } from "@angular/compiler/src/directive_resolver";
+
 
 export class Schedule {
   constructor(
     public name : string,
     public date : Date,
-    public matches : Match[]){}
+    public matches : Match[],
+    public final : boolean = false){}
 }
+
 
 export const SCHEDULE = [
   new Schedule('Molvious 1° giornata', new Date('11/25/2018'), [
@@ -53,25 +63,41 @@ export const SCHEDULE = [
     new Match(OLD, ESQUILINO, Field.B, {hours:16, minutes: 0}, 71, 49),
     new Match(TEAM9),
   ]),
-  new Schedule('Molvious 7° giornata', new Date('03/10/2019'), [
-    new Match(REAL, BEVERLY, Field.A),
-    new Match(PANZAI, ESQUILINO, Field.A),
-    new Match(MERELLERS, CHELTRONES),
-    new Match(TEAM9, MAE),
-    new Match(OLD),
+  new Schedule('Giornata rimandata A FINE TORNEO', new Date('03/10/2019'), [
   ]),
-  new Schedule('Molvious 8° giornata', new Date('03/24/2019'), [
+  new Schedule('Molvious 7° giornata', new Date('03/24/2019'), [
     new Match(OLD, MERELLERS, Field.A),
     new Match(BEVERLY, PANZAI, Field.A),
     new Match(REAL, MAE),
     new Match(CHELTRONES, TEAM9),
     new Match(ESQUILINO)
   ]),
-  new Schedule('Molvious 9° giornata', new Date('04/07/2019'), [
+  new Schedule('Molvious 8° giornata', new Date('04/07/2019'), [
     new Match(MAE, MERELLERS, Field.A),
     new Match(OLD, PANZAI, Field.A),
     new Match(ESQUILINO, BEVERLY),
     new Match(REAL, TEAM9),
     new Match(CHELTRONES)
   ]),
+  new Schedule('Molvious 9° giornata', new Date('04/14/2019'), [
+    new Match(REAL, BEVERLY, Field.A),
+    new Match(PANZAI, ESQUILINO, Field.A),
+    new Match(MERELLERS, CHELTRONES),
+    new Match(TEAM9, MAE),
+    new Match(OLD),
+  ]),
+  new Schedule('Molvious Quarti di finale', new Date('05/05/2019'), [
+    new Match(PRIMA, OTTAVA, Field.A),
+    new Match(SECONDA, SETTIMA, Field.A),
+    new Match(TERZA, SESTA),
+    new Match(QUARTA, QUINTA),
+  ], true),
+  new Schedule('Molvious Semifinali', new Date('05/19/2019'), [
+    new Match(SEMIFINALISTA1, SEMIFINALISTA4, Field.A),
+    new Match(SEMIFINALISTA2, SEMIFINALISTA3, Field.B),
+  ], true),
+  new Schedule('Molvious Finali', new Date('05/26/2019'), [
+    new Match(FINALISTA1, FINALISTA2, Field.A),
+    new Match(TERZISTA3, TERZISTA4, Field.B),
+  ], true),
 ]

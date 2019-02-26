@@ -21,7 +21,10 @@ export const RANKINGS = TEAMS.map(
     let against = 0;
     let loosers = [];
 
-    SCHEDULE.forEach(schedule => {
+    SCHEDULE
+      .filter(schedule => !schedule.final)
+      .forEach(schedule => {
+        
       schedule.matches
         .filter(match => match.score1 > 0 || match.score2 > 0)
         .forEach(match => {
