@@ -63,27 +63,25 @@ export const SCHEDULE = [
     new Match(OLD, ESQUILINO, Field.B, {hours:16, minutes: 0}, 71, 49),
     new Match(TEAM9),
   ]),
-  new Schedule('Giornata rimandata A FINE TORNEO', new Date('03/10/2019'), [
-  ]),
   new Schedule('Molvious 7° giornata', new Date('03/24/2019'), [
-    new Match(OLD, MERELLERS, Field.A),
-    new Match(BEVERLY, PANZAI, Field.A),
-    new Match(REAL, MAE),
-    new Match(CHELTRONES, TEAM9),
+    new Match(OLD, MERELLERS, Field.A, {hours:18, minutes: 0}),
+    new Match(BEVERLY, PANZAI, Field.A, {hours:16, minutes: 30}),
+    new Match(REAL, MAE, Field.B, {hours:16, minutes: 30}),
+    new Match(CHELTRONES, TEAM9, Field.B, {hours:18, minutes: 0}),
     new Match(ESQUILINO)
   ]),
   new Schedule('Molvious 8° giornata', new Date('04/07/2019'), [
-    new Match(MAE, MERELLERS, Field.A),
-    new Match(OLD, PANZAI, Field.A),
-    new Match(ESQUILINO, BEVERLY),
-    new Match(REAL, TEAM9),
+    new Match(MAE, MERELLERS, Field.A, {hours:18, minutes: 45}),
+    new Match(OLD, PANZAI, Field.A, {hours:17, minutes: 15}),
+    new Match(ESQUILINO, BEVERLY, Field.B, {hours:18, minutes: 45}),
+    new Match(REAL, TEAM9, Field.B, {hours:17, minutes: 15}),
     new Match(CHELTRONES)
   ]),
   new Schedule('Molvious 9° giornata', new Date('04/14/2019'), [
-    new Match(REAL, BEVERLY, Field.A),
-    new Match(PANZAI, ESQUILINO, Field.A),
-    new Match(MERELLERS, CHELTRONES),
-    new Match(TEAM9, MAE),
+    new Match(REAL, BEVERLY, Field.A, {hours:17, minutes: 30}),
+    new Match(PANZAI, ESQUILINO, Field.A, {hours:19, minutes: 0}),
+    new Match(MERELLERS, CHELTRONES, Field.B, {hours:19, minutes: 0}),
+    new Match(TEAM9, MAE, Field.B, {hours:17, minutes: 30}),
     new Match(OLD),
   ]),
   new Schedule('Molvious Quarti di finale', new Date('05/05/2019'), [
@@ -92,11 +90,11 @@ export const SCHEDULE = [
     new Match(TERZA, SESTA),
     new Match(QUARTA, QUINTA),
   ], true),
-  new Schedule('Molvious Semifinali', new Date('05/19/2019'), [
+  new Schedule('Molvious Semifinali', new Date('05/12/2019'), [
     new Match(SEMIFINALISTA1, SEMIFINALISTA4, Field.A),
     new Match(SEMIFINALISTA2, SEMIFINALISTA3, Field.B),
   ], true),
-  new Schedule('Molvious Finali', new Date('05/26/2019'), [
+  new Schedule('Molvious Finali', new Date('05/19/2019'), [
     new Match(FINALISTA1, FINALISTA2, Field.A),
     new Match(TERZISTA3, TERZISTA4, Field.B),
   ], true),
