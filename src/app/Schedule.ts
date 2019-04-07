@@ -8,7 +8,6 @@ import { PRIMA, SECONDA, TERZA, QUARTA,
   TERZISTA3, TERZISTA4 } from './Finals'
 
 import { Field } from './Field.enum';
-import { findLast } from "@angular/compiler/src/directive_resolver";
 
 
 export class Schedule {
@@ -71,10 +70,10 @@ export const SCHEDULE = [
     new Match(ESQUILINO)
   ]),
   new Schedule('Molvious 8° giornata', new Date('04/07/2019'), [
-    new Match(MAE, MERELLERS, Field.A, {hours:18, minutes: 45}),
-    new Match(OLD, PANZAI, Field.A, {hours:17, minutes: 15}),
-    new Match(ESQUILINO, BEVERLY, Field.B, {hours:18, minutes: 45}),
-    new Match(REAL, TEAM9, Field.B, {hours:17, minutes: 15}),
+    new Match(MAE, MERELLERS, Field.A, {hours:18, minutes: 45}, 36, 33),
+    new Match(OLD, PANZAI, Field.A, {hours:17, minutes: 15}, 47, 63),
+    new Match(ESQUILINO, BEVERLY, Field.B, {hours:18, minutes: 45}, 39, 76),
+    new Match(REAL, TEAM9, Field.B, {hours:17, minutes: 15}, 68, 75),
     new Match(CHELTRONES)
   ]),
   new Schedule('Molvious 9° giornata', new Date('04/14/2019'), [
