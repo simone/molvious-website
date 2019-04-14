@@ -24,7 +24,7 @@ export const RANKINGS = TEAMS.map(
     SCHEDULE
       .filter(schedule => !schedule.final)
       .forEach(schedule => {
-        
+
       schedule.matches
         .filter(match => match.score1 > 0 || match.score2 > 0)
         .forEach(match => {
@@ -62,12 +62,12 @@ export const RANKINGS = TEAMS.map(
       return -1
     }
     // scontro diretto
-    if (r1.loosers.find(team => team === r2.team)) {
-      return -1
-    }
-    if (r2.loosers.find(team => team === r1.team)) {
-      return +1
-    }
+    //if (r1.loosers.find(team => team === r2.team)) {
+    //  return -1
+    //}
+    //if (r2.loosers.find(team => team === r1.team)) {
+    //  return +1
+    //}
     // differenza canestri diretta
     // non serve in un torneo di sola andata...
 

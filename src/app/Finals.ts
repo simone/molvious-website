@@ -1,13 +1,13 @@
-import { Team } from "./Team";
+import { Team, BEVERLY, OLD, PANZAI, MAE, MERELLERS, TEAM9, CHELTRONES, ESQUILINO } from './Team';
 
-export const PRIMA = new Team("Prima del girone", "");
-export const SECONDA = new Team("Seconda del girone", "");
-export const TERZA = new Team("Terza del girone", "");
-export const QUARTA = new Team("Quarta del girone", "");
-export const QUINTA = new Team("Quinta del girone", "");
-export const SESTA = new Team("Sesta del girone", "");
-export const SETTIMA = new Team("Settima del girone", "");
-export const OTTAVA = new Team("Ottava del girone", "");
+export const PRIMA = BEVERLY;
+export const SECONDA = OLD;
+export const TERZA = PANZAI;
+export const QUARTA = MAE;
+export const QUINTA = MERELLERS;
+export const SESTA = TEAM9;
+export const SETTIMA = CHELTRONES;
+export const OTTAVA = ESQUILINO;
 
 export const SEMIFINALISTA1 = new Team("Semifinalista 1", "");
 export const SEMIFINALISTA2 = new Team("Semifinalista 2", "");
