@@ -3,9 +3,9 @@ import { Team, BEVERLY, OLD, PANZAI, MAE, MERELLERS, TEAM9, CHELTRONES, ESQUILIN
 export const PRIMA = BEVERLY;
 export const SECONDA = OLD;
 export const TERZA = PANZAI;
-export const QUARTA = MAE;
-export const QUINTA = MERELLERS;
-export const SESTA = TEAM9;
+export const QUARTA = TEAM9;
+export const QUINTA = MAE;
+export const SESTA = MERELLERS;
 export const SETTIMA = CHELTRONES;
 export const OTTAVA = ESQUILINO;
 
