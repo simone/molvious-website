@@ -84,17 +84,17 @@ export const SCHEDULE = [
     new Match(OLD),
   ]),
   new Schedule('Molvious Quarti di finale', new Date('05/05/2019'), [
-    new Match(PRIMA, OTTAVA, Field.A),
-    new Match(SECONDA, SETTIMA, Field.A),
-    new Match(TERZA, SESTA),
-    new Match(QUARTA, QUINTA),
+    new Match(PRIMA, OTTAVA, Field.A, {hours:17, minutes: 0}),
+    new Match(SECONDA, SETTIMA, Field.A, {hours:15, minutes: 30}),
+    new Match(TERZA, SESTA, Field.B, {hours:17, minutes: 0}),
+    new Match(QUARTA, QUINTA, Field.B, {hours:15, minutes: 30}),
   ], true),
   new Schedule('Molvious Semifinali', new Date('05/12/2019'), [
-    new Match(SEMIFINALISTA1, SEMIFINALISTA4, Field.A),
-    new Match(SEMIFINALISTA2, SEMIFINALISTA3, Field.B),
+    new Match(SEMIFINALISTA1, SEMIFINALISTA4, Field.A, {hours:17, minutes: 0}),
+    new Match(SEMIFINALISTA2, SEMIFINALISTA3, Field.B, {hours:18, minutes: 30}),
   ], true),
-  new Schedule('Molvious Finali', new Date('05/19/2019'), [
-    new Match(FINALISTA1, FINALISTA2, Field.A),
-    new Match(TERZISTA3, TERZISTA4, Field.B),
+  new Schedule('Molvious Finali', new Date('05/18/2019'), [
+    new Match(FINALISTA1, FINALISTA2, Field.A, {hours:20, minutes: 0}),
+    new Match(TERZISTA3, TERZISTA4, Field.B, {hours:18, minutes: 30}),
   ], true),
 ]
